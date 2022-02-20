@@ -10,8 +10,7 @@ keyfield.forEach(function (a) {
     } else if (keyText == "=") {
       screen.value = eval(screen.value);
     } else {
-      screenValue += keyText;
-      screen.value = screenValue;
+      screen.value += keyText;
     }
   });
 });
