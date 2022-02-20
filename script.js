@@ -9,6 +9,8 @@ keyfield.forEach(function (a) {
       screen.value = screenValue;
     } else if (keyText == "=") {
       screen.value = eval(screen.value);
+    } else if (keyText == "DEL") {
+      screen.value = screen.value.slice(0, -1);
     } else {
       screen.value += keyText;
     }
